@@ -5,10 +5,11 @@
    "post1_50_sites": "https://x.com/mertmetindev/status/2086123249016983903",
    "post2_10_scrapers": "https://x.com/xiaoying_eth/status/2085920007360524724",
    "post3_10_segundo_cerebro": "https://x.com/0xkkai/status/2085838657068347401",
-   "post4_12_repos": "https://x.com/xiaoying_eth/status/2086245080558637482"
+   "post4_12_repos": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "skills_ecossistema": "https://github.com/vercel-labs/skills"
   },
   "gerado_em": "2026-08-09",
-  "total": 82
+  "total": 87
  },
  "tools": [
   {
@@ -1559,6 +1560,105 @@
     "faceless"
    ],
    "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "skills CLI (npx skills)",
+   "category": "Dev/Skills",
+   "url": "https://github.com/vercel-labs/skills",
+   "repo_url": "https://github.com/vercel-labs/skills",
+   "description": "Gerenciador de pacotes do ecossistema de agent skills; instala/atualiza SKILL.md em dezenas de agentes (suporta OpenClaw).",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "cli",
+   "pricing": "open-source",
+   "tags": [
+    "skills",
+    "cli",
+    "openclaw"
+   ],
+   "source_post": "https://github.com/vercel-labs/skills",
+   "notes": ""
+  },
+  {
+   "name": "vercel-labs/agent-skills",
+   "category": "Dev/Skills",
+   "url": "https://github.com/vercel-labs/agent-skills",
+   "repo_url": "https://github.com/vercel-labs/agent-skills",
+   "description": "Skills de web/React/Next e design (web-design-guidelines, frontend-design, skill-creator) — 100K+ installs.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "skill",
+   "pricing": "open-source",
+   "tags": [
+    "design",
+    "react",
+    "skills"
+   ],
+   "source_post": "https://github.com/vercel-labs/skills",
+   "notes": ""
+  },
+  {
+   "name": "mattpocock/skills",
+   "category": "Dev/Skills",
+   "url": "https://github.com/mattpocock/skills",
+   "repo_url": "https://github.com/mattpocock/skills",
+   "description": "Catálogo de skills de workflow: to-prd, to-issues, tdd, triage, diagnose, grill-me, zoom-out, handoff.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "skill",
+   "pricing": "open-source",
+   "tags": [
+    "workflow",
+    "prd",
+    "tdd"
+   ],
+   "source_post": "https://github.com/vercel-labs/skills",
+   "notes": ""
+  },
+  {
+   "name": "anthropics/skills",
+   "category": "Dev/Skills",
+   "url": "https://github.com/anthropics/skills",
+   "repo_url": "https://github.com/anthropics/skills",
+   "description": "Skills oficiais (frontend design, processamento de documentos) — 100K+ installs.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "skill",
+   "pricing": "open-source",
+   "tags": [
+    "design",
+    "docs",
+    "skills"
+   ],
+   "source_post": "https://github.com/vercel-labs/skills",
+   "notes": ""
+  },
+  {
+   "name": "skills.sh",
+   "category": "Dev/Skills",
+   "url": "https://skills.sh",
+   "repo_url": "",
+   "description": "Diretório/leaderboard do ecossistema de agent skills (ranqueado por installs).",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "open-source",
+   "tags": [
+    "diretorio",
+    "skills"
+   ],
+   "source_post": "https://github.com/vercel-labs/skills",
    "notes": ""
   }
  ]

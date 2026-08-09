@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Clona todos os repositorios GitHub do catalogo em ./repos/
+set -e
+mkdir -p repos && cd repos
+echo ">> firecrawl/firecrawl"; git clone --depth 1 https://github.com/firecrawl/firecrawl.git || echo "  (ja existe/erro)"
+echo ">> unclecode/crawl4ai"; git clone --depth 1 https://github.com/unclecode/crawl4ai.git || echo "  (ja existe/erro)"
+echo ">> browser-use/browser-use"; git clone --depth 1 https://github.com/browser-use/browser-use.git || echo "  (ja existe/erro)"
+echo ">> apify/crawlee"; git clone --depth 1 https://github.com/apify/crawlee.git || echo "  (ja existe/erro)"
+echo ">> scrapy/scrapy"; git clone --depth 1 https://github.com/scrapy/scrapy.git || echo "  (ja existe/erro)"
+echo ">> microsoft/markitdown"; git clone --depth 1 https://github.com/microsoft/markitdown.git || echo "  (ja existe/erro)"
+echo ">> D4Vinci/Scrapling"; git clone --depth 1 https://github.com/D4Vinci/Scrapling.git || echo "  (ja existe/erro)"
+echo ">> Genymobile/scrcpy"; git clone --depth 1 https://github.com/Genymobile/scrcpy.git || echo "  (ja existe/erro)"
+echo ">> alirezamika/autoscraper"; git clone --depth 1 https://github.com/alirezamika/autoscraper.git || echo "  (ja existe/erro)"
+echo ">> lwthiker/curl-impersonate"; git clone --depth 1 https://github.com/lwthiker/curl-impersonate.git || echo "  (ja existe/erro)"
+echo ">> AgriciDaniel/claude-obsidian"; git clone --depth 1 https://github.com/AgriciDaniel/claude-obsidian.git || echo "  (ja existe/erro)"
+echo ">> eugeniughelbur/obsidian-second-brain"; git clone --depth 1 https://github.com/eugeniughelbur/obsidian-second-brain.git || echo "  (ja existe/erro)"
+echo ">> kepano/obsidian-skills"; git clone --depth 1 https://github.com/kepano/obsidian-skills.git || echo "  (ja existe/erro)"
+echo ">> qhuang20/obsidian-skills"; git clone --depth 1 https://github.com/qhuang20/obsidian-skills.git || echo "  (ja existe/erro)"
+echo ">> ekadetov/llm-wiki"; git clone --depth 1 https://github.com/ekadetov/llm-wiki.git || echo "  (ja existe/erro)"
+echo ">> iansinnott/obsidian-claude-code-mcp"; git clone --depth 1 https://github.com/iansinnott/obsidian-claude-code-mcp.git || echo "  (ja existe/erro)"
+echo ">> noesskeetit/second-brain-mcp"; git clone --depth 1 https://github.com/noesskeetit/second-brain-mcp.git || echo "  (ja existe/erro)"
+echo ">> CoMfUcIoS/second-brain-mcp"; git clone --depth 1 https://github.com/CoMfUcIoS/second-brain-mcp.git || echo "  (ja existe/erro)"
+echo ">> sunnyhasija/obsidian-plugin-skills"; git clone --depth 1 https://github.com/sunnyhasija/obsidian-plugin-skills.git || echo "  (ja existe/erro)"
+echo ">> C-Bjorn/MegaMem"; git clone --depth 1 https://github.com/C-Bjorn/MegaMem.git || echo "  (ja existe/erro)"
+echo "Pronto. 20 repositorios." 

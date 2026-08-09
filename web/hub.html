@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ecossistema Toolkit</title>
+<style>
+:root{--bg:#0b0d12;--card:#151822;--line:#252a37;--txt:#e9ecf3;--mut:#9aa4b6;--acc:#6ea8fe;--g:#3ddc97;--y:#ffd166;--p:#c792ea;}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,#182033,transparent),var(--bg);color:var(--txt)}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 22px 80px}
+h1{font-size:30px;margin:0 0 6px}.lead{color:var(--mut);margin:0 0 28px;font-size:15px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 30px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;min-width:120px}
+.stat b{font-size:24px;display:block}.stat span{color:var(--mut);font-size:12px}
+h2{font-size:18px;margin:34px 0 12px;border-left:3px solid var(--acc);padding-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:16px}.card p{margin:0;color:var(--mut);font-size:13px}
+a.btn{margin-top:auto;text-decoration:none;color:#0b0d12;background:var(--acc);font-weight:600;border-radius:9px;padding:9px;text-align:center;font-size:13px}
+a.ghost{color:var(--acc);text-decoration:none;font-size:13px;border:1px solid var(--line);border-radius:9px;padding:9px;text-align:center}
+.pill{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:20px;padding:2px 9px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+footer{color:var(--mut);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+</style></head><body><div class="wrap">
+<h1>🧰 Ecossistema Toolkit</h1>
+<p class="lead">Conhecimento derivado de 3 threads do X, transformado em ferramentas, base de dados, guias e um segundo cérebro — sob o controle de <b>mauroda666</b>.</p>
+<div class="stats">
+  <div class="stat"><b>70</b><span>ferramentas catalogadas</span></div>
+  <div class="stat"><b>19</b><span>monetizáveis 💰</span></div>
+  <div class="stat"><b>37</b><span>de desenvolvimento</span></div>
+  <div class="stat"><b>34</b><span>analíticas</span></div>
+  <div class="stat"><b>20</b><span>repositórios GitHub</span></div>
+</div>
+
+<h2>Ferramentas</h2>
+<div class="grid">
+  <div class="card"><span class="pill">Dashboard</span><h3>Central navegável</h3><p>Busque e filtre as 70 ferramentas por valor, categoria e preço.</p><a class="btn" href="index.html">Abrir dashboard →</a></div>
+  <div class="card"><span class="pill">SQLite</span><h3>Base de dados</h3><p><code>db/toolkit.db</code> consultável + <code>schema.sql</code>. View <code>monetizable</code> pronta.</p><a class="ghost" href="catalog.json">Ver catalog.json</a></div>
+  <div class="card"><span class="pill">Script</span><h3>Clonar os 20 repos</h3><p><code>bash install-repos.sh</code> baixa todos os repositórios de uma vez.</p><a class="ghost" href="../install-repos.sh">Ver script</a></div>
+</div>
+
+<h2>Guias & Conteúdo</h2>
+<div class="grid">
+  <div class="card"><span class="pill">Monetização</span><h3>Stack de Scraping vendável</h3><p>Os 10 repos de scraping combinados num serviço que você pode cobrar.</p><a class="ghost" href="../content/01-scraping-monetizavel.md">Ler guia</a></div>
+  <div class="card"><span class="pill">Setup</span><h3>Segundo Cérebro em 30 min</h3><p>Claude + Obsidian: 1 compilador + 1 ponte MCP + storage triplo.</p><a class="ghost" href="../content/02-segundo-cerebro-30min.md">Ler guia</a></div>
+  <div class="card"><span class="pill">Fluxos</span><h3>Pesquisa & Produtividade</h3><p>Os 50 sites organizados em pipelines por objetivo.</p><a class="ghost" href="../content/03-pesquisa-e-produtividade.md">Ler guia</a></div>
+  <div class="card"><span class="pill">Prompts</span><h3>Biblioteca de Prompts</h3><p>Prompts reaproveitáveis que amarram as ferramentas.</p><a class="ghost" href="../content/04-biblioteca-de-prompts.md">Abrir biblioteca</a></div>
+  <div class="card"><span class="pill">MCP</span><h3>Configs Claude Desktop</h3><p>Snippets de <code>claude_desktop_config.json</code> para as pontes MCP.</p><a class="ghost" href="../content/mcp-config-exemplos.md">Ver snippets</a></div>
+  <div class="card"><span class="pill">Obsidian</span><h3>Vault / Segundo Cérebro</h3><p>Estrutura pronta: Inbox, Tools, Skills, Projects, Templates, MOCs.</p><a class="ghost" href="../vault/README.md">Abrir vault</a></div>
+</div>
+
+<footer>Fontes: 3 threads do X — @mertmetindev (50 sites), @xiaoying_eth (10 scrapers), @0xkkai (10 repos segundo cérebro). Repositório: mauroda666/toolkit.</footer>
+</div></body></html>

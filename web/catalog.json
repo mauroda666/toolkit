@@ -1,0 +1,1324 @@
+{
+ "_meta": {
+  "descricao": "Catalogo de ferramentas de valor extraidas de 3 threads do X.",
+  "fontes": {
+   "post1_50_sites": "https://x.com/mertmetindev/status/2086123249016983903",
+   "post2_10_scrapers": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "post3_10_segundo_cerebro": "https://x.com/0xkkai/status/2085838657068347401"
+  },
+  "gerado_em": "2026-08-09",
+  "total": 70
+ },
+ "tools": [
+  {
+   "name": "12ft.io",
+   "category": "Leitura/Produtividade",
+   "url": "https://12ft.io",
+   "repo_url": "",
+   "description": "Contorna paywalls de qualquer site",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "leitura"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "libgen.is",
+   "category": "Conhecimento",
+   "url": "https://libgen.is",
+   "repo_url": "",
+   "description": "Milhões de livros e didáticos grátis",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "conhecimento"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "sci-hub.se",
+   "category": "Pesquisa",
+   "url": "https://sci-hub.se",
+   "repo_url": "",
+   "description": "Artigos acadêmicos grátis",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "alternativeto.net",
+   "category": "Descoberta",
+   "url": "https://alternativeto.net",
+   "repo_url": "",
+   "description": "Encontra alternativas gratuitas de apps",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "descoberta"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "justwatch.com",
+   "category": "Entretenimento",
+   "url": "https://justwatch.com",
+   "repo_url": "",
+   "description": "Descobre onde um conteúdo está sendo transmitido",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "entretenimento"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "archive.org",
+   "category": "Pesquisa",
+   "url": "https://archive.org",
+   "repo_url": "",
+   "description": "Acessa qualquer página antiga da web",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "gutenberg.org",
+   "category": "Conhecimento",
+   "url": "https://gutenberg.org",
+   "repo_url": "",
+   "description": "70 mil livros clássicos grátis",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "conhecimento"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "pdfdrive.com",
+   "category": "Conhecimento",
+   "url": "https://pdfdrive.com",
+   "repo_url": "",
+   "description": "Download gratuito de PDFs",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "conhecimento"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "openculture.com",
+   "category": "Educação",
+   "url": "https://openculture.com",
+   "repo_url": "",
+   "description": "Cursos grátis das melhores universidades",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "educação"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "wolframalpha.com",
+   "category": "Analítico",
+   "url": "https://wolframalpha.com",
+   "repo_url": "",
+   "description": "Resolve qualquer problema de matemática na hora",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "analítico"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "photopea.com",
+   "category": "Design",
+   "url": "https://photopea.com",
+   "repo_url": "",
+   "description": "Photoshop grátis dentro do navegador",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "squoosh.app",
+   "category": "Design/Dev",
+   "url": "https://squoosh.app",
+   "repo_url": "",
+   "description": "Comprime qualquer imagem gratuitamente",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "remove.bg",
+   "category": "Design",
+   "url": "https://remove.bg",
+   "repo_url": "",
+   "description": "Remove o fundo de imagens gratuitamente",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "cleanup.pictures",
+   "category": "Design",
+   "url": "https://cleanup.pictures",
+   "repo_url": "",
+   "description": "Apaga objetos de fotos",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "unscreen.com",
+   "category": "Design/Vídeo",
+   "url": "https://unscreen.com",
+   "repo_url": "",
+   "description": "Remove o fundo de vídeos",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "carbon.now.sh",
+   "category": "Dev",
+   "url": "https://carbon.now.sh",
+   "repo_url": "",
+   "description": "Transforma código em arte/imagem",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "ray.so",
+   "category": "Dev",
+   "url": "https://ray.so",
+   "repo_url": "",
+   "description": "Screenshots de código elegantes",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "shots.so",
+   "category": "Design",
+   "url": "https://shots.so",
+   "repo_url": "",
+   "description": "Mockups de produto grátis",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "smartmockups.com",
+   "category": "Design",
+   "url": "https://smartmockups.com",
+   "repo_url": "",
+   "description": "Cria mockups sem Photoshop",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "design"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "haveibeenpwned.com",
+   "category": "Segurança",
+   "url": "https://haveibeenpwned.com",
+   "repo_url": "",
+   "description": "Verifica se você foi hackeado",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "segurança"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "virustotal.com",
+   "category": "Segurança",
+   "url": "https://virustotal.com",
+   "repo_url": "",
+   "description": "Escaneia arquivos contra malware",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "segurança"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "privnote.com",
+   "category": "Privacidade",
+   "url": "https://privnote.com",
+   "repo_url": "",
+   "description": "Envia mensagens autodestrutivas",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "privacidade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "temp-mail.org",
+   "category": "Privacidade",
+   "url": "https://temp-mail.org",
+   "repo_url": "",
+   "description": "E-mail descartável instantâneo",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "privacidade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "file.io",
+   "category": "Utilitário",
+   "url": "https://file.io",
+   "repo_url": "",
+   "description": "Compartilhamento de arquivos autodeletados",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "utilitário"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "archive.ph",
+   "category": "Pesquisa",
+   "url": "https://archive.ph",
+   "repo_url": "",
+   "description": "Salva qualquer página permanentemente",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "similarsites.com",
+   "category": "Descoberta",
+   "url": "https://similarsites.com",
+   "repo_url": "",
+   "description": "Encontra alternativas de qualquer site",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "descoberta"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "radio.garden",
+   "category": "Entretenimento",
+   "url": "https://radio.garden",
+   "repo_url": "",
+   "description": "Ouve rádios de qualquer lugar do mundo",
+   "value_productive": 0,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "entretenimento"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "everynoise.com",
+   "category": "Descoberta",
+   "url": "https://everynoise.com",
+   "repo_url": "",
+   "description": "Explora todos os gêneros musicais",
+   "value_productive": 0,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "descoberta"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "tunefind.com",
+   "category": "Entretenimento",
+   "url": "https://tunefind.com",
+   "repo_url": "",
+   "description": "Acha músicas de qualquer série/filme",
+   "value_productive": 0,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "entretenimento"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "musicforprogramming.net",
+   "category": "Produtividade",
+   "url": "https://musicforprogramming.net",
+   "repo_url": "",
+   "description": "Música para foco/programação",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "mynoise.net",
+   "category": "Produtividade",
+   "url": "https://mynoise.net",
+   "repo_url": "",
+   "description": "Ambientes sonoros personalizados de foco",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "coffitivity.com",
+   "category": "Produtividade",
+   "url": "https://coffitivity.com",
+   "repo_url": "",
+   "description": "Sons de café que aumentam a produtividade",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "elicit.org",
+   "category": "Pesquisa/IA",
+   "url": "https://elicit.org",
+   "repo_url": "",
+   "description": "Assistente de IA para artigos acadêmicos",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "consensus.app",
+   "category": "Pesquisa/IA",
+   "url": "https://consensus.app",
+   "repo_url": "",
+   "description": "Busca de consenso científico",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "connectedpapers.com",
+   "category": "Pesquisa",
+   "url": "https://connectedpapers.com",
+   "repo_url": "",
+   "description": "Visualiza mapas de artigos acadêmicos",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "semanticscholar.org",
+   "category": "Pesquisa",
+   "url": "https://semanticscholar.org",
+   "repo_url": "",
+   "description": "Busca acadêmica gratuita",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "scispace.com",
+   "category": "Pesquisa/IA",
+   "url": "https://scispace.com",
+   "repo_url": "",
+   "description": "Entende qualquer artigo acadêmico",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "pesquisa"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "summarize.tech",
+   "category": "Produtividade/IA",
+   "url": "https://summarize.tech",
+   "repo_url": "",
+   "description": "Resume qualquer vídeo do YouTube",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "phind.com",
+   "category": "Dev/IA",
+   "url": "https://phind.com",
+   "repo_url": "",
+   "description": "Buscador de IA para desenvolvedores",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "regex101.com",
+   "category": "Dev",
+   "url": "https://regex101.com",
+   "repo_url": "",
+   "description": "Testa qualquer regex na hora",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "codebeautify.org",
+   "category": "Dev",
+   "url": "https://codebeautify.org",
+   "repo_url": "",
+   "description": "Formata código de forma limpa",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "jsonformatter.org",
+   "category": "Dev",
+   "url": "https://jsonformatter.org",
+   "repo_url": "",
+   "description": "Lê JSON de forma humana",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "explainshell.com",
+   "category": "Dev",
+   "url": "https://explainshell.com",
+   "repo_url": "",
+   "description": "Explica comandos de terminal",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "dev"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "raindrop.io",
+   "category": "Produtividade",
+   "url": "https://raindrop.io",
+   "repo_url": "",
+   "description": "Gerenciador de bookmarks eficiente",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "downdetector.com",
+   "category": "Analítico",
+   "url": "https://downdetector.com",
+   "repo_url": "",
+   "description": "Verifica se um site está fora do ar",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "analítico"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "tineye.com",
+   "category": "Analítico",
+   "url": "https://tineye.com",
+   "repo_url": "",
+   "description": "Busca reversa de imagens",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "analítico"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "fast.com",
+   "category": "Utilitário",
+   "url": "https://fast.com",
+   "repo_url": "",
+   "description": "Testa a velocidade da internet",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "utilitário"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "smallpdf.com",
+   "category": "Produtividade",
+   "url": "https://smallpdf.com",
+   "repo_url": "",
+   "description": "Edição de PDF grátis",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "ilovepdf.com",
+   "category": "Produtividade",
+   "url": "https://ilovepdf.com",
+   "repo_url": "",
+   "description": "Junta e divide PDFs",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "freemium",
+   "tags": [
+    "produtividade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "10minutemail.com",
+   "category": "Privacidade",
+   "url": "https://10minutemail.com",
+   "repo_url": "",
+   "description": "E-mail temporário de segundos",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "web",
+   "pricing": "free",
+   "tags": [
+    "privacidade"
+   ],
+   "source_post": "https://x.com/mertmetindev/status/2086123249016983903",
+   "notes": ""
+  },
+  {
+   "name": "Firecrawl",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/firecrawl/firecrawl",
+   "repo_url": "https://github.com/firecrawl/firecrawl",
+   "description": "Aponta para qualquer site, renderiza JS e devolve dados estruturados prontos pra IA. ~130k estrelas.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "Crawl4AI",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/unclecode/crawl4ai",
+   "repo_url": "https://github.com/unclecode/crawl4ai",
+   "description": "Transforma qualquer página em markdown, sem API key nem custo por página. Open-source (Apache 2.0).",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "Browser-Use",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/browser-use/browser-use",
+   "repo_url": "https://github.com/browser-use/browser-use",
+   "description": "Agente de IA que opera o navegador como humano: clica, rola, loga, preenche e extrai. MIT.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "Crawlee",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/apify/crawlee",
+   "repo_url": "https://github.com/apify/crawlee",
+   "description": "Framework profissional: rotação de proxy, retry, fingerprint e fila. Kit completo grátis.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "Scrapy",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/scrapy/scrapy",
+   "repo_url": "https://github.com/scrapy/scrapy",
+   "description": "Scraper industrial, testado há mais de 10 anos. Escala pra milhões de páginas.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "MarkItDown",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/microsoft/markitdown",
+   "repo_url": "https://github.com/microsoft/markitdown",
+   "description": "Converte arquivos, web, PDF, Office e imagens em markdown pra IA ler. Da Microsoft.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "Scrapling",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/D4Vinci/Scrapling",
+   "repo_url": "https://github.com/D4Vinci/Scrapling",
+   "description": "Scraper furtivo que se adapta a mudanças do site e evita detecção anti-bot.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "scrcpy",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/Genymobile/scrcpy",
+   "repo_url": "https://github.com/Genymobile/scrcpy",
+   "description": "Controla e extrai dados de Android remotamente pelo PC. ~130k estrelas. Apache 2.0.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "AutoScraper",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/alirezamika/autoscraper",
+   "repo_url": "https://github.com/alirezamika/autoscraper",
+   "description": "Scraper inteligente e leve que aprende os padrões da página automaticamente.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "curl-impersonate",
+   "category": "Scraping/Dev",
+   "url": "https://github.com/lwthiker/curl-impersonate",
+   "repo_url": "https://github.com/lwthiker/curl-impersonate",
+   "description": "curl que imita navegadores reais para driblar bloqueios de TLS/fingerprint.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "scraping",
+    "github",
+    "open-source"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2085920007360524724",
+   "notes": ""
+  },
+  {
+   "name": "claude-obsidian",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/AgriciDaniel/claude-obsidian",
+   "repo_url": "https://github.com/AgriciDaniel/claude-obsidian",
+   "description": "Padrão Karpathy Wiki (implementação mais pura). Ingere um arquivo uma vez e compila 8-15 páginas wiki linkadas. Melhor pra começar.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "obsidian-second-brain",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+   "repo_url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+   "description": "MCP read-write + Skills. 45 comandos, busca híbrida (BM25+embeddings), notas auto-reescritas e agentes agendados que mantêm o vault sozinho.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "obsidian-skills (kepano)",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/kepano/obsidian-skills",
+   "repo_url": "https://github.com/kepano/obsidian-skills",
+   "description": "Skills prontas do criador do Obsidian. Clona na pasta de skills e registra sozinho. Aposta mais segura.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "obsidian-skills (qhuang20)",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/qhuang20/obsidian-skills",
+   "repo_url": "https://github.com/qhuang20/obsidian-skills",
+   "description": "Plugin Claude Code com skill llm-wiki (padrão Karpathy) + utilidades. Rápido pra quem vive no Claude Code.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "llm-wiki",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/ekadetov/llm-wiki",
+   "repo_url": "https://github.com/ekadetov/llm-wiki",
+   "description": "Padrão Karpathy puro, 6 comandos. Setup em menos de 5 min. Mínimo viável.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "obsidian-claude-code-mcp",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/iansinnott/obsidian-claude-code-mcp",
+   "repo_url": "https://github.com/iansinnott/obsidian-claude-code-mcp",
+   "description": "MCP read-write via API do Obsidian (respeita plugins Dataview/Templater/Excalidraw).",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "second-brain-mcp (noesskeetit)",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/noesskeetit/second-brain-mcp",
+   "repo_url": "https://github.com/noesskeetit/second-brain-mcp",
+   "description": "MCP read-only offline com busca semântica. Funciona em Claude Code, Cursor, Zed.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "second-brain-mcp (CoMfUcIoS)",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/CoMfUcIoS/second-brain-mcp",
+   "repo_url": "https://github.com/CoMfUcIoS/second-brain-mcp",
+   "description": "MCP estritamente read-only. Ideal pra quem não quer risco de escrita automática.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "obsidian-plugin-skills",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/sunnyhasija/obsidian-plugin-skills",
+   "repo_url": "https://github.com/sunnyhasija/obsidian-plugin-skills",
+   "description": "Expande as skills do Kepano com adições da comunidade (journal, meeting-notes, book-highlight, spaced-review).",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "MegaMem",
+   "category": "Segundo Cérebro/Dev",
+   "url": "https://github.com/C-Bjorn/MegaMem",
+   "repo_url": "https://github.com/C-Bjorn/MegaMem",
+   "description": "MCP + grafo de conhecimento temporal (Graphiti). Rastreia como conceitos mudam ao longo do tempo. 12 graph tools + 11 vault tools.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "mcp",
+   "pricing": "open-source",
+   "tags": [
+    "obsidian",
+    "claude",
+    "second-brain",
+    "github"
+   ],
+   "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  }
+ ]
+}

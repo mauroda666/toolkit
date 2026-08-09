@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toolkit — Central de Ferramentas</title>
+<style>
+  :root { --bg:#0e0f13; --card:#181a20; --line:#262a33; --txt:#e7e9ee; --mut:#9aa2b1; --acc:#6ea8fe; --good:#3ddc97; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); }
+  header { padding:24px 20px 12px; }
+  h1 { margin:0; font-size:22px; }
+  .sub { color:var(--mut); font-size:13px; margin-top:4px; }
+  .controls { display:flex; gap:8px; flex-wrap:wrap; padding:12px 20px; position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line); }
+  input, select { background:var(--card); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:14px; }
+  input { flex:1; min-width:180px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; padding:16px 20px 60px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:8px; }
+  .card h3 { margin:0; font-size:16px; }
+  .card p { margin:0; color:var(--mut); font-size:13px; }
+  .tags { display:flex; gap:6px; flex-wrap:wrap; }
+  .tag { font-size:11px; background:#20242e; border:1px solid var(--line); border-radius:20px; padding:2px 8px; color:var(--mut); }
+  .val { font-size:11px; padding:2px 8px; border-radius:20px; border:1px solid var(--line); }
+  .val.on { color:var(--good); border-color:#204a3a; background:#12241d; }
+  .row { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  a.open { margin-top:auto; text-align:center; text-decoration:none; color:#0e0f13; background:var(--acc); font-weight:600; border-radius:8px; padding:8px; font-size:13px; }
+  .empty { padding:60px 20px; text-align:center; color:var(--mut); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Central de Ferramentas</h1>
+  <div class="sub">Base extraída dos links do thread do X · filtre por valor, categoria ou busca</div>
+</header>
+<div class="controls">
+  <input id="q" placeholder="Buscar ferramenta, tag, descrição...">
+  <select id="cat"><option value="">Todas categorias</option></select>
+  <select id="val">
+    <option value="">Todo valor</option>
+    <option value="value_productive">Produtivo</option>
+    <option value="value_monetizable">Monetizável</option>
+    <option value="value_development">Desenvolvimento</option>
+    <option value="value_analytical">Analítico</option>
+  </select>
+</div>
+<div id="grid" class="grid"></div>
+<div id="empty" class="empty" style="display:none">Nenhuma ferramenta ainda. Popular <code>catalog.json</code> com os dados do scraping.</div>
+<script>
+let DATA = [];
+const grid = document.getElementById('grid'), empty = document.getElementById('empty');
+const q = document.getElementById('q'), cat = document.getElementById('cat'), val = document.getElementById('val');
+const vlabels = { value_productive:'Produtivo', value_monetizable:'Monetizável', value_development:'Dev', value_analytical:'Analítico' };
+
+fetch('catalog.json').then(r=>r.json()).then(j=>{
+  DATA = (j.tools||[]).filter(t => t.name && !t.name.startsWith('(exemplo)'));
+  const cats = [...new Set(DATA.map(t=>t.category).filter(Boolean))].sort();
+  cats.forEach(c=>{ const o=document.createElement('option'); o.value=c; o.textContent=c; cat.appendChild(o); });
+  render();
+}).catch(()=>render());
+
+[q,cat,val].forEach(el=>el.addEventListener('input',render));
+
+function render(){
+  const term = q.value.toLowerCase(), c = cat.value, v = val.value;
+  const rows = DATA.filter(t=>{
+    const hay = (t.name+' '+(t.description||'')+' '+(t.tags||[]).join(' ')+' '+(t.category||'')).toLowerCase();
+    return (!term||hay.includes(term)) && (!c||t.category===c) && (!v||t[v]);
+  });
+  grid.innerHTML='';
+  empty.style.display = rows.length?'none':'block';
+  rows.forEach(t=>{
+    const card=document.createElement('div'); card.className='card';
+    const vals = Object.keys(vlabels).map(k=>`<span class="val ${t[k]?'on':''}">${vlabels[k]}</span>`).join('');
+    const tags = (t.tags||[]).map(x=>`<span class="tag">${x}</span>`).join('');
+    card.innerHTML = `<h3>${t.name}</h3>
+      <div class="row"><span class="tag">${t.category||'—'}</span><span class="tag">${t.pricing||''}</span><span class="tag">${t.access_method||''}</span></div>
+      <p>${t.description||''}</p>
+      <div class="row">${vals}</div>
+      <div class="tags">${tags}</div>
+      ${t.url?`<a class="open" href="${t.url}" target="_blank" rel="noopener">Abrir ferramenta →</a>`:''}`;
+    grid.appendChild(card);
+  });
+}
+</script>
+</body>
+</html>

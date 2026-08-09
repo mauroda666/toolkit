@@ -4,10 +4,11 @@
   "fontes": {
    "post1_50_sites": "https://x.com/mertmetindev/status/2086123249016983903",
    "post2_10_scrapers": "https://x.com/xiaoying_eth/status/2085920007360524724",
-   "post3_10_segundo_cerebro": "https://x.com/0xkkai/status/2085838657068347401"
+   "post3_10_segundo_cerebro": "https://x.com/0xkkai/status/2085838657068347401",
+   "post4_12_repos": "https://x.com/xiaoying_eth/status/2086245080558637482"
   },
   "gerado_em": "2026-08-09",
-  "total": 70
+  "total": 82
  },
  "tools": [
   {
@@ -1318,6 +1319,246 @@
     "github"
    ],
    "source_post": "https://x.com/0xkkai/status/2085838657068347401",
+   "notes": ""
+  },
+  {
+   "name": "TradingAgents",
+   "category": "Finanças/IA",
+   "url": "https://github.com/hmasdev/TradingAgents",
+   "repo_url": "https://github.com/hmasdev/TradingAgents",
+   "description": "Framework multi-agente de trading quant.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "trading",
+    "ia",
+    "financas"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "LibreChat",
+   "category": "IA/Chat",
+   "url": "https://github.com/danny-avila/LibreChat",
+   "repo_url": "https://github.com/danny-avila/LibreChat",
+   "description": "UI única agregando ChatGPT/Claude/Gemini; chat multi-LLM white-label.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "llm",
+    "chat",
+    "white-label"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "HyperFrames",
+   "category": "Vídeo/IA",
+   "url": "https://github.com/hyperbrowser/hyperframes",
+   "repo_url": "https://github.com/hyperbrowser/hyperframes",
+   "description": "Motor open-source tipo HeyGen: texto→vídeo.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "video",
+    "ia",
+    "faceless"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "Nango",
+   "category": "Infra/Integração",
+   "url": "https://github.com/NangoHQ/nango",
+   "repo_url": "https://github.com/NangoHQ/nango",
+   "description": "Plataforma open-source de integração de APIs (centenas de serviços).",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "integracao",
+    "api",
+    "infra"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "Agentic Inbox",
+   "category": "Produtividade/IA",
+   "url": "https://github.com/cloudflare/agentic-inbox",
+   "repo_url": "https://github.com/cloudflare/agentic-inbox",
+   "description": "Assistente de IA que lê e-mail e extrai os pontos.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "email",
+    "ia",
+    "produtividade"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "Fincept Terminal",
+   "category": "Finanças/Dados",
+   "url": "https://github.com/fincept-ai/terminal",
+   "repo_url": "https://github.com/fincept-ai/terminal",
+   "description": "Bloomberg open-source: dados grátis de ações e cripto.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 1,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "financas",
+    "dados",
+    "terminal"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "MoneyPrinterTurbo",
+   "category": "Vídeo/IA",
+   "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+   "repo_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+   "description": "IA gera short a partir de um tema (74k estrelas).",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "video",
+    "short",
+    "faceless"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "Coolify",
+   "category": "Infra/DevOps",
+   "url": "https://github.com/coollabsio/coolify",
+   "repo_url": "https://github.com/coollabsio/coolify",
+   "description": "PaaS self-hosted open-source (economiza Vercel + cobra gestão).",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "paas",
+    "devops",
+    "self-host"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "n8n",
+   "category": "Automação",
+   "url": "https://github.com/n8n-io/n8n",
+   "repo_url": "https://github.com/n8n-io/n8n",
+   "description": "Automação de workflows; setup + mensalidade (194k estrelas).",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "automacao",
+    "workflow",
+    "no-code"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "agent-skills",
+   "category": "Dev/Skills",
+   "url": "https://github.com/anthropics/agent-skills",
+   "repo_url": "https://github.com/anthropics/agent-skills",
+   "description": "Biblioteca de skills do Claude Code.",
+   "value_productive": 1,
+   "value_monetizable": 0,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "claude",
+    "skills",
+    "dev"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "Ghost",
+   "category": "Conteúdo/Membership",
+   "url": "https://github.com/TryGhost/Ghost",
+   "repo_url": "https://github.com/TryGhost/Ghost",
+   "description": "Newsletter/membership open-source sem taxa de plataforma.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 0,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "newsletter",
+    "membership",
+    "conteudo"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
+   "notes": ""
+  },
+  {
+   "name": "VoxCPM",
+   "category": "Voz/IA",
+   "url": "https://github.com/OpenVoiceAI/VoxCPM",
+   "repo_url": "https://github.com/OpenVoiceAI/VoxCPM",
+   "description": "Clonagem de voz por IA a partir de minutos de amostra.",
+   "value_productive": 1,
+   "value_monetizable": 1,
+   "value_development": 1,
+   "value_analytical": 0,
+   "access_method": "self-host",
+   "pricing": "open-source",
+   "tags": [
+    "voz",
+    "tts",
+    "faceless"
+   ],
+   "source_post": "https://x.com/xiaoying_eth/status/2086245080558637482",
    "notes": ""
   }
  ]

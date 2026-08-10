@@ -14,7 +14,8 @@ function renderStats() {
   $("#stats").innerHTML =
     `<div class="stat"><b>${s.tools||0}</b> ferramentas</div>` +
     `<div class="stat"><b>${s.agents||0}</b> agentes</div>` +
-    `<div class="stat"><b>${s.skills||0}</b> skills</div>`;
+    `<div class="stat"><b>${s.skills||0}</b> skills</div>` +
+    `<div class="stat"><b>${s.mcps||0}</b> MCPs</div>`;
 }
 
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
@@ -28,7 +29,8 @@ function syncFilter() {
   const sel = $("#filter"); let opts = [];
   if (TAB === "tools") opts = [...new Set(DATA.tools.map(x => x.category).filter(Boolean))].sort();
   else if (TAB === "agents") opts = [...new Set(DATA.agents.map(x => x.division).filter(Boolean))].sort();
-  const label = TAB === "tools" ? "categorias" : TAB === "agents" ? "divisões" : "";
+  else if (TAB === "mcps") opts = [...new Set((DATA.mcps||[]).map(x => x.transport).filter(Boolean))].sort();
+  const label = TAB === "tools" ? "categorias" : TAB === "agents" ? "divisões" : TAB === "mcps" ? "transportes" : "";
   sel.style.display = opts.length ? "" : "none";
   sel.innerHTML = `<option value="">Todas ${label}</option>` + opts.map(o => `<option value="${o}">${o}</option>`).join("");
 }
@@ -43,9 +45,12 @@ function render() {
   } else if (TAB === "agents") {
     rows = DATA.agents.filter(a => matches((a.name||"")+" "+(a.description||"")+" "+(a.division||"")) && (!FILTER||a.division===FILTER));
     grid.innerHTML = rows.map(a => itemCard("agent", a, a.division, a.emoji, a.vibe)).join("");
-  } else {
+  } else if (TAB === "skills") {
     rows = DATA.skills.filter(s => matches((s.name||"")+" "+(s.description||"")));
     grid.innerHTML = rows.map(s => itemCard("skill", s, "skill", "", "")).join("");
+  } else {
+    rows = (DATA.mcps||[]).filter(m => matches((m.name||"")+" "+(m.description||"")+" "+(m.transport||"")+" "+(m.tags||[]).join(" ")) && (!FILTER||m.transport===FILTER));
+    grid.innerHTML = rows.map(mcpCard).join("");
   }
   empty.style.display = rows.length ? "none" : "block";
   countEl.textContent = rows.length + " itens";
@@ -68,6 +73,16 @@ function itemCard(type, x, badge, emoji, vibe) {
     <button class="add" data-add="1" data-type="${type}" data-id="${esc(x.id)}" data-name="${esc(x.name)}">+ time</button>
   </div>`;
 }
+function mcpCard(m) {
+  const st = m.status === "instalado" ? "on" : "";
+  return `<div class="card click" data-type="mcp" data-id="${esc(m.id||m.name)}">
+    <h3>${esc(m.name)}</h3>
+    <div class="row"><span class="tag">${esc(m.transport||"")}</span><span class="v ${st}">${esc(m.status||"")}</span></div>
+    <p>${esc(m.description||"")}</p>
+    <div class="row"><span class="tag">${esc(m.source||"")}</span></div>
+    <button class="add" data-open="1">Ver / copiar config</button>
+  </div>`;
+}
 
 grid.addEventListener("click", (e) => {
   const add = e.target.closest("[data-add]");
@@ -76,7 +91,30 @@ grid.addEventListener("click", (e) => {
   if (card) openDetail(card.dataset.type, card.dataset.id);
 });
 
+function taskUI(show) {
+  const disp = show ? "" : "none";
+  $("#mTaskLabel").style.display = disp;
+  $("#mTask").style.display = disp;
+  $("#mAdd").style.display = disp;
+  $("#mPromptLabel").textContent = show ? "Prompt pronto" : "Config (cole no claude_desktop_config.json e reinicie)";
+  $("#mCopy").textContent = show ? "Copiar prompt" : "Copiar config";
+}
+
 function openDetail(type, id) {
+  if (type === "mcp") {
+    fetch(`/api/mcp/${encodeURIComponent(id)}`).then(r => r.json()).then(d => {
+      if (d.error) return;
+      CUR = null; taskUI(false);
+      $("#mTitle").textContent = d.name;
+      $("#mSub").textContent = `MCP · ${d.transport||""}${d.url ? " · " + d.url : ""}`;
+      $("#mDesc").textContent = d.description || "";
+      $("#mPrompt").value = d.config || "";
+      $("#mSrc").textContent = d.source || "";
+      $("#modal").classList.add("on");
+    });
+    return;
+  }
+  taskUI(true);
   fetch(`/api/${type}/${encodeURIComponent(id)}`).then(r => r.json()).then(d => {
     if (d.error) return;
     CUR = { type, id, name: d.name, prefix: d.prompt };

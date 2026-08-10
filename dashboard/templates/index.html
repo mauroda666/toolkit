@@ -59,6 +59,7 @@ pre{white-space:pre-wrap;background:#0f1218;border:1px solid var(--line);border-
     <div class="tab on" data-t="tools">Ferramentas</div>
     <div class="tab" data-t="agents">Agentes</div>
     <div class="tab" data-t="skills">Skills</div>
+    <div class="tab" data-t="mcps">MCPs</div>
   </div>
   <div class="controls">
     <input id="q" placeholder="Buscar…" autocomplete="off">
@@ -77,9 +78,9 @@ pre{white-space:pre-wrap;background:#0f1218;border:1px solid var(--line);border-
     <h2 id="mTitle"></h2>
     <p class="mut" id="mSub"></p>
     <p id="mDesc"></p>
-    <label class="mut">Tarefa</label>
+    <label class="mut" id="mTaskLabel">Tarefa</label>
     <textarea id="mTask" rows="3" placeholder="Descreva a tarefa…"></textarea>
-    <label class="mut" style="display:block;margin-top:8px">Prompt pronto</label>
+    <label class="mut" id="mPromptLabel" style="display:block;margin-top:8px">Prompt pronto</label>
     <textarea id="mPrompt" rows="6"></textarea>
     <div class="btns">
       <button class="btn" id="mCopy">Copiar prompt</button>

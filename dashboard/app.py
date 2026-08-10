@@ -85,6 +85,52 @@ def load_skills():
     return out
 
 
+def _detect_local_mcps():
+    found = {}
+    cd = Path(os.environ.get("APPDATA", "")) / "Claude" / "claude_desktop_config.json"
+    for p, label in ((cd, "Claude Desktop"), (HOME / ".claude.json", "Claude Code")):
+        try:
+            if p.exists():
+                data = json.loads(p.read_text(encoding="utf-8"))
+                for name, cfg in (data.get("mcpServers") or {}).items():
+                    found[name] = {"source": label, "config": {"mcpServers": {name: cfg}}}
+                for pv in (data.get("projects") or {}).values():
+                    for name, cfg in ((pv or {}).get("mcpServers") or {}).items():
+                        found[name] = {"source": label + " (projeto)", "config": {"mcpServers": {name: cfg}}}
+        except Exception:
+            pass
+    try:
+        import tomllib
+        cx = HOME / ".codex" / "config.toml"
+        if cx.exists():
+            t = tomllib.loads(cx.read_text(encoding="utf-8"))
+            for name, cfg in (t.get("mcp_servers") or {}).items():
+                found[name] = {"source": "Codex", "config": {"mcp_servers": {name: cfg}}}
+    except Exception:
+        pass
+    return found
+
+
+def load_mcps():
+    cat = []
+    p = APP_DIR / "mcps.json"
+    if p.exists():
+        try:
+            cat = json.loads(p.read_text(encoding="utf-8")).get("mcps", [])
+        except Exception:
+            cat = []
+    by = {}
+    for m in cat:
+        m = dict(m)
+        m["status"] = "catálogo"
+        by[m["name"]] = m
+    for name, info in _detect_local_mcps().items():
+        by[name] = {"id": name, "name": name, "description": "Configurado localmente.",
+                    "transport": "local", "source": info["source"], "tags": ["instalado"],
+                    "config": info["config"], "status": "instalado"}
+    return list(by.values())
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -92,13 +138,25 @@ def index():
 
 @app.route("/api/data")
 def api_data():
-    tools, agents, skills = load_tools(), load_agents(), load_skills()
+    tools, agents, skills, mcps = load_tools(), load_agents(), load_skills(), load_mcps()
     return jsonify({
         "tools": tools,
         "agents": agents,
         "skills": skills,
-        "stats": {"tools": len(tools), "agents": len(agents), "skills": len(skills)},
+        "mcps": mcps,
+        "stats": {"tools": len(tools), "agents": len(agents), "skills": len(skills), "mcps": len(mcps)},
     })
+
+
+@app.route("/api/mcp/<path:mcp_id>")
+def api_mcp(mcp_id):
+    for m in load_mcps():
+        if m.get("id") == mcp_id or m.get("name") == mcp_id:
+            cfg = json.dumps(m.get("config", {}), indent=2, ensure_ascii=False)
+            return jsonify({"name": m["name"], "description": m.get("description", ""),
+                            "source": m.get("source", ""), "transport": m.get("transport", ""),
+                            "url": m.get("url", ""), "config": cfg})
+    return jsonify({"error": "nao encontrado"}), 404
 
 
 def _body_after_fm(text):

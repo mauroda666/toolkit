@@ -1,0 +1,56 @@
+{
+  "mcps": [
+    {
+      "id": "indice",
+      "name": "indice — busca semântica",
+      "description": "MCP read-only sobre o índice semântico do monorepo AI (buscar_no_indice, indice_stats, indice_saude).",
+      "transport": "stdio",
+      "source": "mauroda666/AI · indice/indice_mcp.py (PR #402)",
+      "tags": ["ecossistema", "busca", "read-only"],
+      "config": {
+        "mcpServers": {
+          "indice-ecossistema": {
+            "command": "python",
+            "args": ["C:/caminho/para/AI/indice/indice_mcp.py"],
+            "env": { "OLLAMA_HOST": "http://localhost:11434", "EMBED_MODEL": "nomic-embed-text" }
+          }
+        }
+      }
+    },
+    {
+      "id": "maurodabot-bridge",
+      "name": "maurodabot-bridge — OpenClaw",
+      "description": "Proxy MCP do OpenClaw na Forja, exposto via Cloudflare Tunnel (HTTP). Endpoint estável.",
+      "transport": "http",
+      "source": "VM Forja · named tunnel Cloudflare",
+      "url": "https://mcp.mauropassini.com/mcp",
+      "tags": ["ecossistema", "openclaw", "http"],
+      "config": { "mcpServers": { "maurodabot-bridge": { "url": "https://mcp.mauropassini.com/mcp" } } }
+    },
+    {
+      "id": "mcp-varejonline",
+      "name": "mcp-varejonline — ERP",
+      "description": "MCP do ERP Varejonline (Quiksilver): 21 tools — produtos, estoque, pedidos, financeiro, KPIs. Transport SSE na VM.",
+      "transport": "sse",
+      "source": "mauroda666/AI · mcp-varejonline (PR #400)",
+      "tags": ["ecossistema", "erp", "sse"],
+      "config": { "mcpServers": { "varejonline": { "url": "http://HOST-DA-VM:4000/sse" } } }
+    },
+    {
+      "id": "second-brain-mcp",
+      "name": "second-brain-mcp — Obsidian",
+      "description": "Ponte MCP read-only com busca semântica sobre o vault Obsidian. Multi-ferramenta (Claude/Cursor/Zed).",
+      "transport": "stdio",
+      "source": "noesskeetit/second-brain-mcp (auditoria #3)",
+      "tags": ["obsidian", "segundo-cérebro"],
+      "config": {
+        "mcpServers": {
+          "second-brain": {
+            "command": "npx",
+            "args": ["-y", "second-brain-mcp", "--vault", "C:/OBSIDIAN/EQUITA 1"]
+          }
+        }
+      }
+    }
+  ]
+}

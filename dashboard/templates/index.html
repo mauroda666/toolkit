@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gestor — Ferramentas · Agentes · Skills</title>
+<style>
+:root{--bg:#0b0d12;--card:#151822;--line:#252a37;--txt:#e9ecf3;--mut:#9aa4b6;--acc:#6ea8fe;--g:#3ddc97;--y:#ffd166;--p:#c792ea}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--txt);-webkit-text-size-adjust:100%}
+header{padding:16px 16px 8px;position:sticky;top:0;background:linear-gradient(#0b0d12,#0b0d12ee);z-index:5;border-bottom:1px solid var(--line)}
+h1{margin:0 0 8px;font-size:18px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:12px;color:var(--mut)}
+.stat b{color:var(--txt);font-size:16px}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tab{flex:1;background:var(--card);border:1px solid var(--line);color:var(--mut);border-radius:10px;padding:10px;font-size:14px;cursor:pointer;text-align:center}
+.tab.on{color:#0b0d12;background:var(--acc);border-color:var(--acc);font-weight:600}
+.controls{display:flex;gap:8px}
+input,select{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:15px}
+input{flex:1;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;padding:12px 16px 80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px}
+.card h3{margin:0;font-size:15px;display:flex;gap:6px;align-items:center}
+.card p{margin:0;color:var(--mut);font-size:13px}
+.row{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.tag{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:20px;padding:1px 8px}
+.v{font-size:11px;border:1px solid var(--line);border-radius:20px;padding:1px 8px;color:var(--mut)}
+.v.on{color:var(--g);border-color:#204a3a;background:#12241d}
+a.open{margin-top:auto;text-align:center;text-decoration:none;color:#0b0d12;background:var(--acc);font-weight:600;border-radius:9px;padding:8px;font-size:13px}
+.empty{padding:50px 16px;text-align:center;color:var(--mut)}
+.count{color:var(--mut);font-size:12px;padding:0 16px}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+.card.click{cursor:pointer}.card.click:active{transform:scale(.995)}
+.add{align-self:flex-start;background:#20242e;border:1px solid var(--line);color:var(--acc);border-radius:8px;padding:5px 9px;font-size:12px;cursor:pointer}
+.modal{position:fixed;inset:0;background:#000a;display:none;z-index:20;align-items:flex-end;justify-content:center}
+.modal.on{display:flex}
+.sheet{background:var(--card);border:1px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-width:760px;max-height:88vh;overflow:auto;padding:16px 16px 24px}
+@media(min-width:640px){.modal{align-items:center}.sheet{border-radius:16px}}
+.sheet h2{margin:0 0 4px;font-size:18px}
+.sheet .mut{color:var(--mut);font-size:13px;margin:0 0 10px}
+textarea{width:100%;background:#0f1218;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;resize:vertical}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.btn{background:var(--acc);color:#0b0d12;border:none;border-radius:9px;padding:9px 12px;font-weight:600;font-size:13px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--line)}
+details summary{cursor:pointer;color:var(--mut);font-size:13px;margin-top:6px}
+pre{white-space:pre-wrap;background:#0f1218;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:12px;overflow:auto;max-height:40vh}
+.tray{position:fixed;right:14px;bottom:14px;z-index:15;background:var(--acc);color:#0b0d12;border:none;border-radius:24px;padding:12px 16px;font-weight:700;box-shadow:0 6px 20px #0008;cursor:pointer;display:none}
+.tray.on{display:block}
+.toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:#12241d;color:var(--g);border:1px solid #204a3a;border-radius:10px;padding:8px 14px;font-size:13px;z-index:30;display:none}
+.toast.on{display:block}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧭 Gestor — Ferramentas · Agentes · Skills</h1>
+  <div class="stats" id="stats"></div>
+  <div class="tabs">
+    <div class="tab on" data-t="tools">Ferramentas</div>
+    <div class="tab" data-t="agents">Agentes</div>
+    <div class="tab" data-t="skills">Skills</div>
+  </div>
+  <div class="controls">
+    <input id="q" placeholder="Buscar…" autocomplete="off">
+    <select id="filter"><option value="">Todos</option></select>
+  </div>
+</header>
+<div class="count" id="count"></div>
+<div class="grid" id="grid"></div>
+<div class="empty" id="empty" style="display:none">Nada encontrado.</div>
+
+<button class="tray" id="trayBtn">🧩 Time (0)</button>
+<div class="toast" id="toast">Copiado ✓</div>
+
+<div class="modal" id="modal">
+  <div class="sheet">
+    <h2 id="mTitle"></h2>
+    <p class="mut" id="mSub"></p>
+    <p id="mDesc"></p>
+    <label class="mut">Tarefa</label>
+    <textarea id="mTask" rows="3" placeholder="Descreva a tarefa…"></textarea>
+    <label class="mut" style="display:block;margin-top:8px">Prompt pronto</label>
+    <textarea id="mPrompt" rows="6"></textarea>
+    <div class="btns">
+      <button class="btn" id="mCopy">Copiar prompt</button>
+      <button class="btn ghost" id="mAdd">+ Adicionar ao time</button>
+      <button class="btn ghost" id="mClose">Fechar</button>
+    </div>
+    <details><summary>Ver fonte (SKILL.md / persona)</summary><pre id="mSrc"></pre></details>
+  </div>
+</div>
+
+<div class="modal" id="teamModal">
+  <div class="sheet">
+    <h2>🧩 Time para a tarefa</h2>
+    <p class="mut" id="teamList"></p>
+    <label class="mut">Tarefa do time</label>
+    <textarea id="teamTask" rows="3" placeholder="O que o time deve entregar…"></textarea>
+    <label class="mut" style="display:block;margin-top:8px">Prompt do time</label>
+    <textarea id="teamPrompt" rows="8"></textarea>
+    <div class="btns">
+      <button class="btn" id="teamCopy">Copiar prompt do time</button>
+      <button class="btn ghost" id="teamClear">Limpar time</button>
+      <button class="btn ghost" id="teamClose">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

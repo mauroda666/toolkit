@@ -119,16 +119,29 @@ def load_mcps():
             cat = json.loads(p.read_text(encoding="utf-8")).get("mcps", [])
         except Exception:
             cat = []
-    by = {}
+    result = {}
+    index = {}  # chave normalizada (id/nome) -> entrada do catálogo
     for m in cat:
         m = dict(m)
         m["status"] = "catálogo"
-        by[m["name"]] = m
+        result[m["name"]] = m
+        for key in {str(m.get("id", "")).lower(), m["name"].lower()}:
+            if key:
+                index[key] = m
     for name, info in _detect_local_mcps().items():
-        by[name] = {"id": name, "name": name, "description": "Configurado localmente.",
-                    "transport": "local", "source": info["source"], "tags": ["instalado"],
-                    "config": info["config"], "status": "instalado"}
-    return list(by.values())
+        hit = index.get(name.lower())
+        if hit:  # já existe no catálogo -> mescla como instalado (sem duplicar)
+            hit["status"] = "instalado"
+            hit["source"] = info["source"]
+            hit["config"] = info["config"]
+            tags = hit.setdefault("tags", [])
+            if "instalado" not in tags:
+                tags.append("instalado")
+        else:
+            result[name] = {"id": name, "name": name, "description": "Configurado localmente.",
+                            "transport": "local", "source": info["source"], "tags": ["instalado"],
+                            "config": info["config"], "status": "instalado"}
+    return list(result.values())
 
 
 @app.route("/")
